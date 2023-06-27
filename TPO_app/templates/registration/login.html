@@ -13,8 +13,8 @@
     <div class="tile is-6 is-vertical is-parent">
         <article class="tile is-child">
             <div class="content">
-                <figure class="image is-4by3">
-                    <img src="{% static 'images/LoginSVG.svg'%}">
+                <figure class="image is-4by4">
+                    <img src="{% static 'images/login.png'%}">
                 </figure>
             </div>
         </article>
@@ -27,7 +27,7 @@
                 {% csrf_token %}
                 {{form |bulma}}
                 <p>Don't have an account? Create one <a href="/register">here</a></p><br>
-                <button type="submit" class="button is-danger is-light "><strong><i class="fas fa-sign-in-alt"></i>  Login</strong></button>
+                <button type="submit" class="button is-success is-light "><strong><i class="fas fa-sign-in-alt"></i>  Login</strong></button>
             </form>
             </p>
         </div>
